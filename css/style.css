@@ -16,6 +16,7 @@ body {
 	background-color: rgb(185, 172, 172);
 	background-size: cover;
 	min-height: 100%;
+	padding-bottom: 10rem;
 }
 
 main {
@@ -23,7 +24,7 @@ main {
 	margin: auto;
 }
 h2 {
-	padding:3rem 0rem;
+	padding: 3rem 0rem;
 	color: white;
 	font-family: "Schoolbell", sans-serif;
 	font-size: 3rem;
@@ -32,27 +33,28 @@ ul {
 	display: grid;
 	gap: 1rem;
 }
-@media(min-width:40em){
-	ul{
-		grid-template-columns: repeat(2,1fr);
+@media (min-width: 40em) {
+	ul {
+		grid-template-columns: repeat(2, 1fr);
 	}
 }
-@media(min-width:60em){
-	ul{
-		grid-template-columns: repeat(3,1fr);
+@media (min-width: 60em) {
+	ul {
+		grid-template-columns: repeat(3, 1fr);
 	}
 }
-@media(min-width:80em){
-	ul{
-		grid-template-columns: repeat(4,1fr);
+@media (min-width: 80em) {
+	ul {
+		grid-template-columns: repeat(4, 1fr);
 	}
 }
-@media(min-width:100em){
-	ul{
-		grid-template-columns: repeat(5,1fr);
+@media (min-width: 100em) {
+	ul {
+		grid-template-columns: repeat(5, 1fr);
 	}
 }
-a,p {
+a,
+p {
 	display: block;
 	font-family: "roboto", sans-serif;
 	width: 15rem;
@@ -135,23 +137,27 @@ ul a:active {
 	color: #000;
 	font-weight: bold;
 }
-.chatgpt{
-	display:flex;
+img {
+	margin-top: 30px;
+}
+.chatgpt {
+	display: flex;
 	justify-content: center;
 }
 .button_chat {
-	margin-top:5rem;
+	margin-top: 5rem;
 }
-.button_chat::before{
-	opacity:1;
+.button_chat::before {
+	opacity: 1;
 }
-.button_chat::after{
+.button_chat::after {
 	background: transparent;
-
 }
-.colors{
-	display:none;
+.colors,
+.sizing,
+.conect {
+	display: none;
 }
-.show{
-	display:block;
+.show {
+	display: block;
 }
