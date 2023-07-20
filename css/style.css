@@ -149,3 +149,9 @@ ul a:active {
 	background: transparent;
 
 }
+.colors{
+	display:none;
+}
+.show{
+	display:block;
+}
