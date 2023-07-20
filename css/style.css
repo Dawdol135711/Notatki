@@ -14,7 +14,8 @@ body {
 	line-height: 1.5;
 	background-image: url(../img/software-gd350746fd_1920.jpg);
 	background-color: rgb(185, 172, 172);
-	height: 100%;
+	background-size: cover;
+	min-height: 100%;
 }
 
 main {
@@ -22,26 +23,50 @@ main {
 	margin: auto;
 }
 h2 {
+	padding:3rem 0rem;
 	color: white;
 	font-family: "Schoolbell", sans-serif;
+	font-size: 3rem;
 }
 ul {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
+	display: grid;
+	gap: 1rem;
 }
-a {
+@media(min-width:40em){
+	ul{
+		grid-template-columns: repeat(2,1fr);
+	}
+}
+@media(min-width:60em){
+	ul{
+		grid-template-columns: repeat(3,1fr);
+	}
+}
+@media(min-width:80em){
+	ul{
+		grid-template-columns: repeat(4,1fr);
+	}
+}
+@media(min-width:100em){
+	ul{
+		grid-template-columns: repeat(5,1fr);
+	}
+}
+a,p {
+	display: block;
 	font-family: "roboto", sans-serif;
 	width: 15rem;
 	text-align: center;
 	text-decoration: none;
 	color: #fff;
 	font-size: 1rem;
-}
-button {
-	margin: 10px;
-	width: 15rem;
 	padding: 15px 40px;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
 	border: none;
 	outline: none;
 	color: #fff;
@@ -110,6 +135,17 @@ ul a:active {
 	color: #000;
 	font-weight: bold;
 }
+.chatgpt{
+	display:flex;
+	justify-content: center;
+}
 .button_chat {
-	opacity: 1;
+	margin-top:5rem;
+}
+.button_chat::before{
+	opacity:1;
+}
+.button_chat::after{
+	background: transparent;
+
 }
