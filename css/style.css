@@ -178,3 +178,6 @@ input{
 	font-family: 'roboto';
 	font-style: italic;
 }
+input{
+	display:none;
+}
