@@ -161,9 +161,6 @@ img {
 .conect {
 	display: none;
 }
-.show {
-	display: block;
-}
 input{
 	font-size: 1.2rem;
 	border-radius: 15px;
@@ -180,4 +177,21 @@ input{
 }
 input{
 	display:none;
+}
+.calcInput{
+	display:block;
+	padding:1.5rem;
+}
+.rounded{
+	font-family: "roboto",sans-serif;
+	color: #ffffff;
+	font-style: italic;
+	letter-spacing: 1px;
+	background-color: rgba(34, 34, 190, 0.5);
+	border-radius: 12px;
+	width:fit-content;
+	display:none;
+}
+.show {
+	display: block;
 }

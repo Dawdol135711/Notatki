@@ -26,7 +26,7 @@ conectBtn.addEventListener("click", conectVisible);
 const inputs = document.querySelectorAll(".calcInput");
 const calc = document.querySelector(".calc");
 function calcShow() {
-	inputs.forEach(element => {
+	inputs.forEach((element) => {
 		element.classList.toggle("show");
 	});
 }
@@ -43,15 +43,17 @@ calc.addEventListener("click", calcShow);
 
 const calcValue = document.querySelector(".in");
 const equals = document.querySelector(".out");
-
+const rounded = document.querySelector(".rounded")
 function debug() {
-  const value = parseFloat(calcValue.value);
+	const value = parseFloat(calcValue.value);
 
-  if (!isNaN(value)) {
-    equals.value = value*2.36;
-  } else {
-    equals.value = "Wprowadź liczbę!";
-  }
+	if (!isNaN(value)) {
+		equals.value = (value * 2.36).toFixed(2);
+    rounded.classList.add("show");
+	} else {
+		equals.value = "Wprowadź liczbę!";
+	}
+  
 }
 
 calcValue.addEventListener("input", debug);
